@@ -46,13 +46,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
 
 body {
-	margin: 0;
+	margin: 0 auto;
 }
 
 article,
@@ -255,6 +254,25 @@ td,
 th {
 	padding: 0;
 }
+#page {
+	max-width:1040px;
+	margin: 0 auto;
+}
+#masthead {
+	padding: 2em 0;
+}
+#primary {
+	float: right;
+	width: 66.67%;
+	padding-left: 25px;
+	padding-right: 50px;
+}
+#secondary {
+	float: left;
+	width: 33.33%;
+	padding-left: 50px;
+	padding-right: 25px;
+}
 
 /*--------------------------------------------------------------
 # Typography
@@ -267,7 +285,6 @@ textarea {
 	color: #404040;
 	font-family: sans-serif;
 	font-size: 16px;
-	font-size: 1rem;
 	line-height: 1.5;
 }
 
@@ -610,14 +627,6 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -891,3 +900,28 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+Responsive
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 550px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}	
+@media screen and (max-width: 550px){
+	#primary,
+	#secondary {
+		float: none;
+		width: 100%;
+	}
+	#primary{
+		padding-bottom: 50px;
+	}
+
+}
+

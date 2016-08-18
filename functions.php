@@ -6,7 +6,6 @@
  *
  * @package ishabnam
  */
- get_header();
 
 if ( ! function_exists( 'ishabnam_setup' ) ) :
 /**
