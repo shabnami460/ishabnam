@@ -273,6 +273,14 @@ th {
 	padding-left: 50px;
 	padding-right: 25px;
 }
+.site-title{
+	text-align: center;
+	font-size: 40px;
+	margin: 20px auto;
+}
+.site-description{
+	text-align: center;
+}
 
 /*--------------------------------------------------------------
 # Typography
@@ -550,8 +558,13 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
+}
+#primary-menu {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	padding-top: 1em;
 }
 
 .main-navigation ul {
@@ -911,6 +924,9 @@ Responsive
 	}
 	.main-navigation ul {
 		display: block;
+	}
+	.hamburger {
+	color: pink;
 	}
 }	
 @media screen and (max-width: 550px){

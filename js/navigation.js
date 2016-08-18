@@ -12,7 +12,7 @@
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
+	button = container.getElementsByTagName( 'span' )[0];
 	if ( 'undefined' === typeof button ) {
 		return;
 	}

@@ -6,6 +6,8 @@
  *
  * @package ishabnam
  */
+ 
+
 
 if ( ! function_exists( 'ishabnam_setup' ) ) :
 /**
@@ -114,6 +116,7 @@ function ishabnam_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ishabnam_scripts' );
 
+get_header();
 /**
  * Implement the Custom Header feature.
  */

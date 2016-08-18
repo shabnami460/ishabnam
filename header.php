@@ -42,7 +42,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ishabnam' ); ?></button>
+			<span id="menu-toggle" class="menu-box" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '&#9776;Menu', 'ishabnam' ); ?></span>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
