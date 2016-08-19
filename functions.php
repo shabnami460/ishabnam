@@ -119,7 +119,7 @@ add_action( 'wp_enqueue_scripts', 'ishabnam_scripts' );
 //This file controls the theme options
 	require get_stylesheet_directory() . '/inc/options.php';
 	
-
+//Enqueue Google fonts
 function load_fonts() {
             wp_register_style('et-googleFonts', 'https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:300i');
             wp_enqueue_style( 'et-googleFonts');
@@ -128,7 +128,7 @@ function load_fonts() {
     
 register_nav_menus(array( 'secondary' => 'Footer Menu') );
 
-// Add Signature Image after single post
+// Adds a custom signature text after single post
 	function custom_signature($signature){
 		if (is_single()){
 			$signature.='<h7>Israt Shabnam</h7>';

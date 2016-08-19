@@ -33,6 +33,7 @@ ishabnam includes support for Infinite Scroll in Jetpack.
 * Initial release
 
 == Credits ==
-
+* All images used in the blog posts and on the sidebar are owned by Israt Shabnam. 
+* Screenshot image source: Pixabay https://pixabay.com/en/grey-swirl-background-patchwork-999379/
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)

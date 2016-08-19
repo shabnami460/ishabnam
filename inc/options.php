@@ -1,5 +1,15 @@
 <?php
+/*
+*
+*
+This template creates a submenu under Appearance in the wordpress that allows
+the users to change certain elements without having to change the code 
+*
+*
+*/
 
+
+//This function creates the submenu under the desired existing menus on wordpress.
 function ishabnam_add_submenu() {
 		add_submenu_page(
 			'themes.php',
@@ -9,27 +19,27 @@ function ishabnam_add_submenu() {
 			'custom_options',
 			'ishabnam_theme_options_page'
 		);
-		
-
 	}
 add_action( 'admin_menu', 'ishabnam_add_submenu' );
 
+
+//This function deteremines that it would be a settings page that would help edit exsting content.
 function ishabnam_settings_init() { 
 	register_setting( 'theme_options', 'ishabnam_options_settings' );
 	
-			
+				
 	add_settings_section(
 		'ishabnam_options_page_section', 
 		'', 
 		'ishabnam_options_page_section_callback', 
 		'ishabnam_theme_options'
 	);
-	
+//This function produces a decription for the submenu page
 		function ishabnam_options_page_section_callback() { 
 		echo 'A custom edit page to customize some basic information in the theme.';
 	}
 
-	
+//This function creates a dropdown menu from where users can choose prexisting options to customize the theme 
 		add_settings_field( 
 		'select_field', 
 		'Choose a header Colour', 
@@ -47,7 +57,7 @@ function ishabnam_settings_init() {
 			</select>
 		<?php
 	}	
-	
+//This function creates a text box for users to input content to edit in the theme
 		add_settings_field( 
 		'ishabnam_text_field', 
 		'Enter your Custom Signature', 
@@ -62,7 +72,8 @@ function ishabnam_settings_init() {
 		<input type="text" name="ishabnam_options_settings[ishabnam_text_field]" value="" placeholder="Custom Signature" />
 		<?php
 	}
-	
+
+//This function generates the layout of the Custom submenu
 		function ishabnam_theme_options_page(){ 
 			?>
 			<form action="options.php" method="post">

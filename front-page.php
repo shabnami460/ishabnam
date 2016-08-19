@@ -19,9 +19,9 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			
-	//Custom posts for homepage
+	//Generates a random post under the homepage body from the existing blog posts
 	
-	$featuredPost=new WP_Query('cat=36&posts_per_page=1&orderby=ran');
+	$featuredPost=new WP_Query('cat=191&posts_per_page=2&orderby=title');
 			
 	if ($featuredPost->have_post()):
 	

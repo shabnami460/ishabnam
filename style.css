@@ -257,7 +257,7 @@ th {
 #page {
 	max-width:100%;
 	margin: 0 auto;
-	background-image: url("image/banner.jpg");
+	background-image: url("image/banner.jpg"); /*image source:Pixabay https://pixabay.com/en/banner-template-leaves-grey-1018814/ */
 	padding-bottom: 35px;
 }
 #masthead {
@@ -516,6 +516,15 @@ dd {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+}
+#izzy{
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	border-radius: 120px;
+	border-width: 15px;
+	border-style: double;
+	border-color: pink;
+
 }
 
 table {
