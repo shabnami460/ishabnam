@@ -138,6 +138,9 @@ register_nav_menus(array( 'secondary' => 'Footer Menu') );
 		
 	add_filter( "the_content","custom_signature");
 	
+	add_image_size( 'feature-thumb', 30, 30 ); //30 x30px image
+	
+	
 
 /**
  * Implement the Custom Header feature.

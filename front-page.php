@@ -17,27 +17,15 @@ get_header(); ?>
 					comments_template();
 				endif;
 
-			endwhile; // End of the loop.
-			
-	//Generates a random post under the homepage body from the existing blog posts
-	
-	$featuredPost=new WP_Query('cat=191&posts_per_page=2&orderby=title');
-			
-	if ($featuredPost->have_post()):
-	
-		while($featuredPost->have_posts()) : $featuredPost->the_post();
-	?>
-		<h2><a href="<?php the_permalink(); ?>"<?php the_title(); ?></h2>
-	<?php
-		endwhile;
-		
-		else:
-		
-	endif;
-	
-	wp_reset_postdata();	
-
-?>
+			endwhile; // End of the loop.   
+				 ?>
+<?php			
+	$args = array( 'numberposts' => 1 );
+	$lastposts = get_posts( $args );
+		foreach($lastposts as $post) : setup_postdata($post); ?>
+	<h2>The design, I just finshed last night</h2>
+	<h3><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'featured-thumb' ); ?></a></h3>
+<?php endforeach; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
