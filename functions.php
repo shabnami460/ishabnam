@@ -121,9 +121,20 @@ function load_fonts() {
             wp_enqueue_style( 'et-googleFonts');
         }
     add_action('wp_print_styles', 'load_fonts');
+    
+register_nav_menus(array( 'secondary' => 'Footer Menu') );
 
+// Add Signature Image after single post
+	function custom_signature($signature){
+		if (is_single()){
+			$signature.='<h7>Israt Shabnam</h7>';
+		}
+			return $signature;
+		}
+		
+	add_filter( "the_content","custom_signature");
+	
 
-get_header();
 /**
  * Implement the Custom Header feature.
  */

@@ -253,26 +253,35 @@ table {
 td,
 th {
 	padding: 0;
-}
+} 
 #page {
 	max-width:100%;
 	margin: 0 auto;
-	background: gray;
+	background-image: url("image/banner.jpg");
+	background-height: 100%;
+	background-width: 100%;
+	padding-bottom: 35px;
 }
 #masthead {
 	padding: 2em 0;
 }
 #primary {
 	float: right;
-	width: 77%;
+	width: 70%;
+	border-radius: 15px;
+	border-style: double;
+	border-color: white;
+	border-width: 3px;
 	padding-left: 25px;
 	padding-right: 50px;
+	margin: 0 50px 0 0;
+	background-color: rgba(115, 115, 115, .7);
+	color: white;
 }
 #secondary {
 	float: left;
 	width: 23%;
 	padding-left: 50px;
-	padding-right: 25px;
 	font-family: sans serif;
 }
 .site-title{
@@ -281,7 +290,6 @@ th {
 	font-size: 60px;
 	margin: 20px auto 0 auto;
 	font-family: 'Great Vibes', cursive;
-	text-decoration: normal;
 	color: black;
 }
 .site-description{
@@ -293,8 +301,40 @@ th {
 	font-weight: 300; 
 }
 .site-branding {
-	background: pink;
+	background: rgba(255, 102, 153, .5);
+	width: 100%;
+	border-width: 15px 0 15px 0;
+	border-style: double;
+	border-color: white;
 }
+#footer-menu {
+	padding-top: 10px;
+	background: rgba(64, 64, 64, .5);
+	font-family: 'Open Sans', sans serif;
+	list-style-type: none;	
+	border-top: 15px;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-color: white;
+	border-style: double;
+	width: 100%;
+	color: white;
+}
+#foot-menu {
+
+	font-family: 'Open Sans', sans serif;
+
+}
+.site-info {
+	text-align: center;
+}
+h7 {
+	font-size: 30px;
+	font-family: 'Great Vibes', cursive;
+	color: pink;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -318,8 +358,8 @@ h5,
 h6 {
 	clear: both;
 	font-style: italic;
+	color: pink;
 }
-
 p {
 	margin-bottom: 1.5em;
 }
@@ -545,17 +585,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: black;
 }
 
 a:visited {
-	color: gray;
+	color: black;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: black;
+	color: gray;
 }
 
 a:focus {
@@ -575,30 +615,35 @@ a:active {
 	display: block;
 	width: 100%;
 }
-.menu-box {
+#menu-box {
 	float: left;
+	padding-left: 20px;
 }
 #primary-menu {
-	font-size: 14px;
+	font-size: 18px;
 	width: 100%;
 	text-align: center;
 }
 
 .main-navigation ul {
 	display: none;
-	list-style: none;
+	list-style: circle;
 	margin: 0;
 	padding-left: 0;
+	color: gray;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .main-navigation li {
 	float: none;
-	padding: 0 5em;
-	text-align: center;
+	display: inline;
+	padding: 0 3em;
+	text-decoration: underline;
 }
 
 .main-navigation a {
-	display: block;
+	display: inline;
 	text-decoration: none;
 }
 
@@ -627,6 +672,7 @@ a:active {
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
 }
+
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
@@ -946,7 +992,7 @@ Responsive
 		padding-left: 20px;
 	}
 }	
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
 	#primary,
 	#secondary {
 		float: none;
@@ -954,6 +1000,10 @@ Responsive
 	}
 	#primary{
 		padding-bottom: 50px;
+	}
+	.main-navigation li {
+		display: block;
+		padding-left: 20px;
 	}
 
 }
