@@ -283,6 +283,7 @@ th {
 	padding-left: 50px;
 	font-family: sans serif;
 	text-align: center;
+	margin: 0;
 }
 .site-title{
 	text-align: center;
@@ -485,7 +486,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
 }
 
 ul {
@@ -502,7 +503,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0em;
 }
 
 dt {

@@ -12,25 +12,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 A starter theme called ishabnam, or underscores.
 
 == Description ==
-
-Hi. I'm a starter theme called ishabnam, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-ishabnam includes support for Infinite Scroll in Jetpack.
-
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
+This is a simple theme created to put more focus on the content than the theme itself.
+It was created to serve as a portfolio thus, the main navigation has been kept simple
+with three menus. Additional pages cam be added easily by going to the Pages tab in Wordpress.
+The theme also has a custom menu option, which allows user to switch the color scheme, allowing
+them to turn all the pink elements in the theme to purple. This option can be found under
+Appearance>Theme Options, where there's a simple drop down to choose between the two. 
+Additionally, there's a custom signature tag which only shows up on single content pages
+at the bottom right corner of the screen. The name of the signature can also be changed
+by simply typing the new desired titile in the text box in the Theme Options page.
 
 == Credits ==
 * All images used in the blog posts and on the sidebar are owned by Israt Shabnam. 
