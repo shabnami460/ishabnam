@@ -116,6 +116,10 @@ function ishabnam_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ishabnam_scripts' );
 
+//This file controls the theme options
+	require get_stylesheet_directory() . '/inc/options.php';
+	
+
 function load_fonts() {
             wp_register_style('et-googleFonts', 'https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:300i');
             wp_enqueue_style( 'et-googleFonts');

@@ -258,9 +258,9 @@ th {
 	max-width:100%;
 	margin: 0 auto;
 	background-image: url("image/banner.jpg");
-	background-height: 100%;
-	background-width: 100%;
 	padding-bottom: 35px;
+	
+	
 }
 #masthead {
 	padding: 2em 0;
@@ -330,9 +330,10 @@ th {
 	text-align: center;
 }
 h7 {
-	font-size: 30px;
+	font-size: 40px;
 	font-family: 'Great Vibes', cursive;
 	color: pink;
+	float: right;
 }
 
 /*--------------------------------------------------------------
@@ -715,7 +716,7 @@ a:active {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: left;
+	float: center;
 	width: 50%;
 }
 
