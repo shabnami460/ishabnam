@@ -25,8 +25,7 @@
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
-
-
+	
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
