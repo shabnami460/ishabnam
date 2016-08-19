@@ -138,17 +138,6 @@ register_nav_menus(array( 'secondary' => 'Footer Menu') );
 		
 	add_filter( "the_content","custom_signature");
 	
-	add_theme_support( 'post-thumbnails');
-	set_post_thumbnail_size( 300, 300, true);
-	
-	function link_to_post($thumbnail, $post_id, $post_image_id){
-		$thumbnail='<a href="' .get_permalink($post_id) . '"title"' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' . $thumbnail . '</a>';
-		return $thumbnail;
-	}
-	
-	add_filter( 'post_thumbnail_html','link_to_post');
-
-	
 
 /**
  * Implement the Custom Header feature.
